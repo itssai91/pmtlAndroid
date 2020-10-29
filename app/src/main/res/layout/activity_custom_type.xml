@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomType">
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nextcolor"
+        android:text="NEXT"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/soloImage"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pubgMobileSolo" />
+
+    <ImageView
+        android:id="@+id/duoImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soloImage"
+        app:srcCompat="@drawable/pubgMobileDuo" />
+
+    <ImageView
+        android:id="@+id/squadImage"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/nextBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/duoImage"
+        app:srcCompat="@drawable/pubgMobileSquad" />
+
+    <TextView
+        android:id="@+id/shade1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/welcome_background"
+        app:layout_constraintBottom_toBottomOf="@+id/soloImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/soloImage" />
+
+    <TextView
+        android:id="@+id/shade2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/welcome_background"
+        app:layout_constraintBottom_toBottomOf="@+id/duoImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/duoImage" />
+
+    <TextView
+        android:id="@+id/shade3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/welcome_background"
+        app:layout_constraintBottom_toBottomOf="@+id/squadImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/squadImage" />
+
+    <TextView
+        android:id="@+id/solo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOLO"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/soloImage"
+        app:layout_constraintEnd_toEndOf="@+id/soloImage"
+        app:layout_constraintStart_toStartOf="@+id/soloImage"
+        app:layout_constraintTop_toTopOf="@+id/soloImage" />
+
+    <TextView
+        android:id="@+id/duo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DUO"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/duoImage"
+        app:layout_constraintEnd_toEndOf="@+id/soloImage"
+        app:layout_constraintStart_toStartOf="@+id/duoImage"
+        app:layout_constraintTop_toTopOf="@+id/duoImage" />
+
+    <TextView
+        android:id="@+id/squad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SQUAD"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/squadImage"
+        app:layout_constraintEnd_toEndOf="@+id/squadImage"
+        app:layout_constraintStart_toStartOf="@+id/squadImage"
+        app:layout_constraintTop_toTopOf="@+id/squadImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
